@@ -12,17 +12,8 @@ function calculate(v, v1, v2){
     }
     document.getElementById('demo').innerHTML += `${v} ${res}cm <br>`;
 }
-
-function randomColor() {
-    let color = [];
-    for (let i = 0; i < 4; i++) {
-      color.push(Math.floor(Math.random() * 256));
-    }
-    return 'rgb(' + color.join(', ') + ')';
-  } 
   
 function colorchange(val){
     let x = document.getElementById(val);
-    console.log(x);
-    x.style.backgroundColor = randomColor() ;
+    x.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})` ;
 }

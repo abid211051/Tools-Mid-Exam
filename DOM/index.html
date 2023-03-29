@@ -11,35 +11,49 @@
 
 <body>
     <div id="main">
-        <div id="tri" onmouseover="colorchange('tri')">
-            <img src="./triangle.png" alt="">
-            <h2 id="tri">triangle </h2>
-            <p>Area (A) = 0.5*b*h</p>
-            <div id="triinp">
-                <input type="text" id="tri1">
-                <input type="text" id="tri2">
+        <div id="tri" onmouseover="colorchange('tri')" class="input">
+            <img src="./ans_2/shape_pic/triangle.png" alt="" style="width: 65%;">
+            <div class="text">
+                <h2 id="tri">Triangle </h2>
+                <p>Area (A) = 0.5*b*h</p>
+                <div id="triinp" >
+                    <input type="text" id="tri1" class="inputbox">
+                    <label for="">cm</label>
+                    <input type="text" id="tri2" class="inputbox">
+                    <label for="">cm</label>
+                </div>
+                <button onclick="calculate('triangle',tri1,tri2)" class="btn">Calculate</button>
             </div>
-            <button onclick="calculate('triangle',tri1,tri2)" class="btn">Submit</button>
+
         </div>
-        <div id="rec"  onmouseover="colorchange('rec')">
-            <img src="./rectangle.png" alt="">
-            <h2>Rectangle </h2>
-            <p>Area (A) = W * l</p>
-            <div id="triinp">
-                <input type="text" id="rec1">
-                <input type="text" id="rec2">
+        <div id="rec" onmouseover="colorchange('rec')" class="input">
+            <img src="./ans_2/shape_pic/rectangle.png" alt="">
+            <div class="text">
+                <h2>Rectangle </h2>
+                <p>Area (A) = W * l</p>
+                <div id="triinp" >
+                    <input type="text" id="rec1" class="inputbox">
+                    <label for="">cm</label>
+                    <input type="text" id="rec2" class="inputbox">
+                    <label for="">cm</label>
+                </div>
+                <button onclick="calculate('rectangle',rec1,rec2)" class="btn">Calculate</button>
             </div>
-            <button onclick="calculate('rectangle',rec1,rec2)" class="btn">Submit</button>
         </div>
-        <div id="par"  onmouseover="colorchange('par')">
-            <img src="./parallelogram.png" alt="">
-            <h2>Parallelogram </h2>
-            <p>Area (A) = b * h</p>
-            <div id="triinp">
-                <input type="text" id="par1">
-                <input type="text" id="par2">
+        <div id="par" onmouseover="colorchange('par')" class="input">
+            <img src="./ans_2/shape_pic/parallelogram.png" alt="">
+            <div class="text">
+                <h2>Parallelogram </h2>
+                <p>Area (A) = b * h</p>
+                <div id="triinp">
+                    <input type="text" id="par1" class="inputbox">
+                    <label for="">cm</label>
+                    <input type="text" id="par2" class="inputbox">
+                    <label for="">cm</label>
+                </div>
+                <button onclick="calculate('Parallelogram',par1,par2)" class="btn">Calculate</button>
             </div>
-            <button onclick="calculate('Parallelogram',par1,par2)" class="btn">Submit</button>
+
         </div>
         <div id="output">
             <h2 style="text-align: center;">Area calculation</h2>
