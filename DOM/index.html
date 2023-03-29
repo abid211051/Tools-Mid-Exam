@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="tri" onmouseover="colorchange('tri')">
+            <img src="./triangle.png" alt="">
+            <h2 id="tri">triangle </h2>
+            <p>Area (A) = 0.5*b*h</p>
+            <div id="triinp">
+                <input type="text" id="tri1">
+                <input type="text" id="tri2">
+            </div>
+            <button onclick="calculate('triangle',tri1,tri2)" class="btn">Submit</button>
+        </div>
+        <div id="rec"  onmouseover="colorchange('rec')">
+            <img src="./rectangle.png" alt="">
+            <h2>Rectangle </h2>
+            <p>Area (A) = W * l</p>
+            <div id="triinp">
+                <input type="text" id="rec1">
+                <input type="text" id="rec2">
+            </div>
+            <button onclick="calculate('rectangle',rec1,rec2)" class="btn">Submit</button>
+        </div>
+        <div id="par"  onmouseover="colorchange('par')">
+            <img src="./parallelogram.png" alt="">
+            <h2>Parallelogram </h2>
+            <p>Area (A) = b * h</p>
+            <div id="triinp">
+                <input type="text" id="par1">
+                <input type="text" id="par2">
+            </div>
+            <button onclick="calculate('Parallelogram',par1,par2)" class="btn">Submit</button>
+        </div>
+        <div id="output">
+            <h2 style="text-align: center;">Area calculation</h2>
+            <p id="demo"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
